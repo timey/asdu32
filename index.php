@@ -9,7 +9,7 @@
    		</div>
 	<?php endwhile; ?>
 	
-	<p align="center"><?php next_posts_link('&laquo; &Auml;ltere Eintr&auml;ge') ?> | <?php previous_posts_link('Neuere Eintr&auml;ge &raquo;') ?></p>
+	<p align="center"><?php next_posts_link('&laquo; &Auml;ltere Eintr&auml;ge ') ?> | <?php previous_posts_link('Neuere Eintr&auml;ge &raquo;') ?></p>
 
 	<?php endif; ?>
 
