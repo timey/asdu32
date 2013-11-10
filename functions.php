@@ -13,7 +13,7 @@ function create_post_type() {
 		'has_archive'=>true,
 		'rewrite'=>array('slug' => 'kunstwerke'),
 		//'supports' => array('title','editor','thumbnail','custom-fields')
-		'supports' => array('editor', 'custom-fields')
+		
 		)
 	);
 }
@@ -42,6 +42,23 @@ function wp_admin_bar_new_item(){
 }
 add_action('wp_before_admin_bar_render', 'wp_admin_bar_new_item');
 
+//Chagen Logo during Login to Albertis-Eule
+function albertis_custom_login(){
+	echo '<style type="text/css">
+	h1 a {background-image:url('.get_bloginfo('template_url').'/img/login_logo_albertis.png) !important; }
+	</style>';
+}
+add_action('login_head', 'albertis_custom_login');
+
+//Change Logo in Admin Dashboard to Albertis Logo
+/*
+function albertis_custom_dashboard_logo(){
+	echo '<style type="text/css">
+	h1 a {background-image:url('.get_bloginfo('template_url').'/img/dashboard_logo_albertis.png) !important; }
+	</style>';
+}
+add_action('admin_head', 'albertis_custom_dashboard_logo'); */
+
 //Add LandingPage to Admin Menu
 /*
 add_action('admin_menu', 'add_landingpage_to_dashboard');
@@ -56,6 +73,12 @@ function call_landingpage(){
 
 ///////////////////////////////////////////////////////
 //THIS SECTION IS FOR TEMPLATING FUNCTIONS
+//Add Navigation Menu
+function register_header_menu(){
+	register_nav_menu('header-menu', __('Header Menu'));
+}
+add_action('init', 'register_header_menu');
+
 //Add Sidebar
 if (function_exists("register_sidebar"))
 	register_sidebar();

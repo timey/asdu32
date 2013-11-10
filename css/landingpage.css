@@ -1,0 +1,60 @@
+@import url("../css/12cols.css");
+
+html{
+	background: url("../img/bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+}
+
+body{
+	font-size:100%;
+	
+}
+
+header{
+	background-color: #efefef;
+	width: 80%;
+	max-width: 850px;
+	margin:0 auto;
+	top:0;
+}
+
+nav {
+	float:right;
+	background-color: red;
+}
+nav ul li{
+	float:right;
+	margin: 0 0 0 20px;
+}
+.box_logo{
+	background-color: red;
+	margin-top:0;
+}
+
+header div img {
+	margin:10px;
+	width:80%;
+}
+
+#wrapper{
+	width:80%;
+	max-width: 850px;
+	margin:0 auto;
+	font-size: 1.125rem;
+}
+
+.avatar{
+	height:auto;
+	display: inline-block;
+	float:right;
+}
+
+.teaser{
+	background-color:#eee;
+	float:left;
+	display: inline-block;
+	height:auto;
+}
