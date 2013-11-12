@@ -1,20 +1,159 @@
 /*
-Theme Name: Albertis
-Theme URI: 
-Description: Template für die Kunsthandlung Albertis.de
-Author: Tim Hartl
-Author URI: http://www.timhartl.de/;
+Theme Name: Sonja
+Description: Template für die Webseite Albertis.de
+Author: Sonja Karl
 */
 
+@import url("css/12cols.css");
 
-body      	{color: #333; background: #e5e5e5;}
- 
-#wrapper   	{width: 850px; margin: auto; text-align: left; background: #fff;}
-#header     {height: 160px; padding: 20px; border-bottom: 1px solid #ccc;}
-#main       {width: 520px; padding: 20px; float: left;}
-#sidebar    {width: 270px; padding: 10px; padding-top: 20px; float: left;}
-#footer     {clear: both; height: 100px; padding: 20px; }
-
-.widget {
-	display: block;
+html{
+	background: url("img/bg.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-ms-background-size: cover;
+	-o-background-size: cover;
 }
+
+body{
+	font-size:100%;
+	font-family: 'Open Sans', serif;
+}
+
+#wrapper{
+	width:80%;
+	max-width: 850px;
+	margin:0 auto;
+	height:auto;
+	font: 400 1rem/1.25rem "Open Sans", Arial, Sans;
+}
+
+.clearfix{
+	clear:both;
+}
+
+/* --------------HEADER -------------------*/
+header{
+	width: 80%;
+	max-width: 850px;
+	margin:0 auto 20px auto;
+	top:0;
+	display:block;
+}
+
+header nav {
+	float:right;
+	background-color: #efefef;
+	padding:10px 0 10px 0;
+}
+header nav ul li{
+	float:right;
+	margin: 0 0 0 25px;
+	color: purple;
+}
+
+header nav ul li:first-child{
+	margin: 0 25px 0 25px;
+}
+
+header nav ul li a{
+	color:purple;
+}
+
+header div.box_logo{
+	background-color: #efefef;
+	margin-top:0;
+}
+
+header div img {
+	margin:25px auto 10px auto;
+	width:60%;
+	display:block;
+}
+
+
+/*--------------------LANDINGPAGE------------------------*/
+
+.avatar{
+	height:auto;
+	display: inline-block;
+	float:right;
+}
+
+.teaser_landingpage{
+	background-color:#eee;
+	float:left;
+	display: inline-block;
+	height:auto;
+}
+
+.teaser_landingpage.ueber_uns {
+	padding:0%;
+}
+
+section.ueber_uns.teaser_landingpage div.span_8_of_12 {
+	width: 62.13%;
+	padding:2%;
+}
+
+.teaser_landingpage.span_4_of_12{
+	width:28.26%;
+	padding:2%;
+}
+
+.teaser_landingpage h2
+{
+	font-size: 1.25rem;
+	padding:10px 0;
+}
+
+@media only screen and (max-width: 1048px) {
+	nav ul li:first-child{
+		margin:0 20px 0 20px;
+	}
+
+	nav ul li:last-child{
+		margin: 0px;
+	}
+
+	nav ul li{
+		margin:0 0 0 25px;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+		section.ueber_uns.teaser_landingpage div.span_8_of_12 {
+		width: 96%;
+		padding:2%;
+	}
+
+	.teaser_landingpage.span_4_of_12{
+		width:96%;
+		padding:2%;
+	}
+
+	nav ul li{
+		display:block;
+		clear:both;
+		width:96%;
+		padding:2%;
+		text-align: center;
+		margin:0;
+	}
+
+	nav ul li:first-child{
+		margin:0;
+	}
+}
+
+/*---------------GALLERY PAGE-----------------------*/
+div.gallery_thumb{
+	background-color:red;
+	width:28.26%;
+	padding:2%; 
+	height:150px;
+	display:inline-block;
+	float: left;
+}
+
+div.gallery_thumb.no_margin{margin-left: 0;}
