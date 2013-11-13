@@ -1,13 +1,10 @@
-   <div id="footer">
-   	
-   		<!-- unwichtigere Funktionen -->
-   </div><!-- footer -->
- 		
-</div><!-- wrapper -->
+		<div id="footer"></div>
+		
+	</div><!--wrapper -->
 
-<?php wp_footer(); ?>
+	<?php wp_footer(); ?>
 
-<!-- Statistik / Analyse-Tool einbauen -->
- 
+	<!--Statistik/Analyse-Tool einbauen -->
+
 </body>
 </html>
