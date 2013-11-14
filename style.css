@@ -70,6 +70,20 @@ header div img {
 	display:block;
 }
 
+/*--------------------FOOTER------------------------*/
+
+footer {
+	background-color:#eee;
+}
+
+#footer-widget-area {
+//	padding: 2%;
+}
+
+footer div.span_4_of_12{
+	width:28.26%;
+	padding:2%;
+}
 
 /*--------------------LANDINGPAGE------------------------*/
 

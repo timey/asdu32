@@ -5,7 +5,7 @@
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equic="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title>
-	<!--<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />-->
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/css/reset.css" type="text/css" media="screen" title="alternate" />
 	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/css/landingpage.css" type="text/css" media="screen" title="alternate" />
@@ -59,7 +59,7 @@
 			</div>
 		</section>
 
-	</div><!--Wrapper-->
+
 
 	<!--Backstretch-->
 	<!--
@@ -71,9 +71,7 @@
 
 
 	<!--WP FOOTER to display Admin Bar -->
-	<div>
-		<?php wp_footer(); ?>
-	</div>
+	<?php get_footer(); ?>
 
 </body>
 

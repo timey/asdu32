@@ -18,7 +18,7 @@
 
 	<!--WP FOOTER to display Admin Bar -->
 	<div>
-		<?php wp_footer(); ?>
+		<?php get_footer(); ?>
 	</div>
 
 </body>

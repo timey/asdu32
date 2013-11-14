@@ -11,8 +11,7 @@
 			<?php endif; ?>
 
 		</div><!--main -->
-		<div id="sidebar">
-			<?php get_sidebar(); ?>
-		</div> <!--sidebar-->
+
 
 <?php get_footer(); ?>
+

@@ -79,9 +79,41 @@ function register_header_menu(){
 }
 add_action('init', 'register_header_menu');
 
-//Add Sidebar
+//SIDEBAR
 if (function_exists("register_sidebar"))
-	register_sidebar();
+
+//ADD FOOTER WIDGET	1
+register_sidebar( array(
+	'name' => __( 'First Footer Widget Area', 'asdu32' ),
+	'id' => 'first-footer-widget-area',
+	'description' => __( 'The first footer widget area', 'asdu32' ),
+	'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+	'after_widget' => '</li>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+) );
+
+//ADD FOOTER WIDGET	2
+register_sidebar( array(
+	'name' => __( 'Second Footer Widget Area', 'asdu32' ),
+	'id' => 'second-footer-widget-area',
+	'description' => __( 'The second footer widget area', 'asdu32' ),
+	'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+	'after_widget' => '</li>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+) );
+
+//ADD FOOTER WIDGET	3
+register_sidebar( array(
+	'name' => __( 'Third Footer Widget Area', 'asdu32' ),
+	'id' => 'third-footer-widget-area',
+	'description' => __( 'The third footer widget area', 'asdu32' ),
+	'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
+	'after_widget' => '</li>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+) );
 
 //Later on delete "Comments", "+New" for User Role Borisch 
 //Also Change Logo

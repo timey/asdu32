@@ -1,8 +1,11 @@
-		<div id="footer"></div>
+		<footer class="clearfix" id="footer">
+			<?php get_sidebar( 'footer' ); ?>
+
+			<p class="clearfix">&copy; 2013 - <?php echo date("Y"); echo " "; echo bloginfo('name'); ?>.</p>
+
+		</footer>
 		
 	</div><!--wrapper -->
-
-	<?php wp_footer(); ?>
 
 	<!--Statistik/Analyse-Tool einbauen -->
 
