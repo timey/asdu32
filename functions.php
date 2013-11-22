@@ -13,14 +13,14 @@ function create_post_type() {
 		'has_archive'=>true,
 		'rewrite'=>array('slug' => 'kunstwerke'),
 		//'supports' => array('title','editor','thumbnail','custom-fields')
-<<<<<<< HEAD
+/*<<<<<<< HEAD
 		'supports' => array('editor', 'custom-fields')
 =======
 		
 >>>>>>> Sonja
 		)
 	);
-}
+} */
 
 ////////////////////////////////////////////////////
 //THIS SECTION MODIFIES THE ADMIN MENU AND DASHBOARD
@@ -46,7 +46,7 @@ function wp_admin_bar_new_item(){
 }
 add_action('wp_before_admin_bar_render', 'wp_admin_bar_new_item');
 
-<<<<<<< HEAD
+//<<<<<<< HEAD
 ///////////////////////////////////////////////////////
 //THIS SECTION IS FOR TEMPLATING FUNCTIONS
 =======
@@ -87,15 +87,17 @@ function register_header_menu(){
 }
 add_action('init', 'register_header_menu');
 
->>>>>>> Sonja
+//>>>>>>> Sonja
 //Add Sidebar
 if (function_exists("register_sidebar"))
 	register_sidebar();
 
 //Later on delete "Comments", "+New" for User Role Borisch 
 //Also Change Logo
-<<<<<<< HEAD
+
+
+/*<<<<<<< HEAD
 ?>
 =======
 ?>
->>>>>>> Sonja
+>>>>>>> Sonja  */
