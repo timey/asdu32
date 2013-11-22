@@ -1,23 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//DE" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="de">
+<!DOCTYPE html>
+<html >
 <head profile="http://gmpg.org/xfn/11">
- 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<meta http-equic="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+	<title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title>
+		<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri()?>/css/reset.css" type="text/css" media="screen" title="alternate" />
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+	<?php wp_head(); ?>
 
-   <title><?php wp_title(); ?> - <?php bloginfo('name'); ?></title>
-   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-   <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/normalize.css" type="text/css" />
-   <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
-   <?php wp_head(); ?>
- 
 </head>
-<body>
- 
-<div id="wrapper">
- 
-   <div id="header">
-   	<h1><a href="<?php bloginfo('url'); ?>"> <?php bloginfo('name'); ?></a></h1>
-   	<h3><?php bloginfo('description'); ?></h3>
 
-   </div><!-- header -->
- 
+<body>
+	
+
+	<header>
+		<div class="box_logo col span_4_of_12">
+			<img src="<?php bloginfo('template_url'); ?>/img/logo_albertis.png">
+		</div>
+		<nav class="span_8_of_12">
+			<?php wp_nav_menu(array('theme_location'=>'header-menu')); ?>
+		</nav>
+		<div class="clearfix"></div>
+	</header><!-- header -->
